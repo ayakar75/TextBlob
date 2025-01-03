@@ -1,6 +1,6 @@
 from textblob import TextBlob
 
-text = "Today is a so beautiful day. Tomorrow looks like better than today."
+text = "Today is a so beautiful day. Tomorrow looks like bad weather."
 
 blob = TextBlob(text)
 
@@ -10,5 +10,8 @@ print("Words:", blob.words)          # Kelimeler
 print("Sentiment:", blob.sentiment)  # Duygu analizi
 print("Tags:", blob.tags)
 
-for word, pos in blob.tags:
-    print(f"{word}: {pos}")
+#for word, pos in blob.tags:
+    #print(f"{word}: {pos}")
+
+print("Noun Phrases:", blob.noun_phrases)
+
