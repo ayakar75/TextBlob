@@ -5,8 +5,6 @@ text = "Today is a so beautiful day. Tomorrow looks like bad weather."
 
 blob = TextBlob(text)
 
-
-
 # Detect language
 try:
     detected_language = blob.detect_language()
@@ -14,13 +12,10 @@ try:
 except Exception as e:
     print("Error in detecting language:", e)
 
-
-
 text = "Bonjour, comment ça va?"
 blob = TextBlob(text)
 
 print(dir(blob))  # List all methods available in TextBlob
-
 
 from langdetect import detect, detect_langs
 
